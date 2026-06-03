@@ -1,0 +1,17 @@
+export const loginData = {
+  brand: "LUXE",
+  tagline: "ELEVATED UTILITY",
+  emailLabel: "Email Address",
+  emailPlaceholder: "name@example.com",
+  passwordLabel: "Password",
+  passwordPlaceholder: "••••••••",
+  forgotLabel: "Forgot Password?",
+  submitLabel: "Login",
+  continueLabel: "OR CONTINUE WITH",
+  googleLabel: "Google",
+  appleLabel: "Apple",
+  signupText: "New to LUXE?",
+  signupLink: "Create an Account",
+  footerNote: "© 2024 LUXE. ALL RIGHTS RESERVED.",
+  footerLinks: ["PRIVACY POLICY", "TERMS OF SERVICE", "CONTACT"],
+};
