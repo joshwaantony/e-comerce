@@ -6,7 +6,7 @@ import { Heart, ShoppingCart, User, Search } from "lucide-react";
 
 export default function Header() {
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-xl border-b">
+    <header className="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-xl">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         <div className="flex items-center gap-10">
           <h1 className="text-3xl font-bold tracking-tight">LUXE</h1>

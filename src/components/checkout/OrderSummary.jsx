@@ -1,6 +1,7 @@
 // components/checkout/OrderSummary.jsx
 
 import { ArrowRight, ShieldCheck } from "lucide-react";
+import Link from "next/link";
 
 export default function OrderSummary({ summary }) {
   return (
@@ -36,7 +37,7 @@ export default function OrderSummary({ summary }) {
         </div>
       </div>
 
-      <button
+      <Link href={"/payment"}
         className="
           w-full
           h-16
@@ -55,7 +56,7 @@ export default function OrderSummary({ summary }) {
       >
         Proceed to Payment
         <ArrowRight size={20} />
-      </button>
+      </Link>
 
       <div className="flex items-center justify-center gap-2 mt-5 text-gray-500 text-sm">
         <ShieldCheck size={16} />

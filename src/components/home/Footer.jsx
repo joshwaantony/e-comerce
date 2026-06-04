@@ -2,14 +2,12 @@
 
 export default function Footer() {
   return (
-    <footer className="border-t py-20">
+    <footer className="border-t border-gray-300 py-20 text-black">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12">
         <div>
           <h2 className="text-3xl font-bold">LUXE</h2>
 
-          <p className="text-gray-500 mt-6">
-            Premium luxury shirt boutique.
-          </p>
+          <p className="text-gray-500 mt-6">Premium luxury shirt boutique.</p>
         </div>
 
         <div>

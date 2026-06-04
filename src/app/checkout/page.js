@@ -1,25 +1,33 @@
-import PaymentCheckoutCard from "@/components/payment/PaymentCheckoutCard";
-import PaymentFooter from "@/components/payment/PaymentFooter";
-import PaymentHeader from "@/components/payment/PaymentHeader";
-import PaymentHero from "@/components/payment/PaymentHero";
+import CartSection from "@/components/checkout/CartSection";
+import OrderSummary from "@/components/checkout/OrderSummary";
+import ShippingForm from "@/components/checkout/ShippingForm";
+import { cartItems, orderSummary } from "@/components/data/checkoutData";
+import Footer from "@/components/home/Footer";
+import Navbar from "@/components/newArrival/Navbar";
 
 export default function CheckoutPage() {
   return (
-    <div
-      className="min-h-screen bg-[#f9f9ff] text-[#151c27]"
-      style={{ fontFamily: "Inter, system-ui, sans-serif" }}
-    >
-      <PaymentHeader />
+    <>
+      <Navbar />
 
-      <main className="mx-auto flex w-full max-w-[1120px] flex-col px-4 pb-16 pt-16 sm:px-6 sm:pb-20 sm:pt-20 lg:px-8 lg:pt-24">
-        <PaymentHero />
+      <div className="bg-[#f9f9ff] text-[#151c27] text-black">
+        <main className=" max-w-7xl mx-auto px-6 pt-32 pb-24">
+          <div className="grid lg:grid-cols-12 gap-10">
+            {/* Left */}
+            <div className="lg:col-span-8 flex flex-col gap-10">
+              <CartSection items={cartItems} />
 
-        <div className="mx-auto mt-10 w-full max-w-[720px] sm:mt-14 lg:mt-16 lg:max-w-[760px]">
-          <PaymentCheckoutCard />
-        </div>
-      </main>
+              <ShippingForm />
+            </div>
 
-      <PaymentFooter />
-    </div>
+            {/* Right */}
+            <div className="lg:col-span-4">
+              <OrderSummary summary={orderSummary} />
+            </div>
+          </div>
+        </main>
+      </div>
+      <Footer />
+    </>
   );
 }

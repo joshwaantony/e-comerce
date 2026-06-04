@@ -4,6 +4,7 @@
 
 import { useState } from "react";
 import { Heart, ShoppingBag, Star } from "lucide-react";
+import Link from "next/link";
 
 export default function ProductInfo({ product }) {
   const [selectedSize, setSelectedSize] = useState("S");
@@ -85,10 +86,10 @@ export default function ProductInfo({ product }) {
 
       {/* Buttons */}
       <div className="flex flex-col gap-4">
-        <button className="h-16 rounded-full bg-blue-600 text-white font-semibold flex items-center justify-center gap-3 hover:bg-blue-700 transition">
+        <Link href={"/checkout"} className="h-16 rounded-full bg-blue-600 text-white font-semibold flex items-center justify-center gap-3 hover:bg-blue-700 transition">
           <ShoppingBag size={20} />
           Add to Cart
-        </button>
+        </Link>
 
         <button className="h-16 rounded-full border flex items-center justify-center gap-3 hover:bg-gray-100 transition">
           <Heart size={20} />

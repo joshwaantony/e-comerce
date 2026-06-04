@@ -1,5 +1,7 @@
 // // components/CategorySection.jsx
 
+import Link from "next/link";
+
 // const categories = [
 //   {
 //     title: "Silk Collections",
@@ -52,9 +54,6 @@
 //   );
 // }
 
-
-
-
 // components/CategorySection.jsx
 
 const categories = [
@@ -82,7 +81,6 @@ export default function CategorySection() {
   return (
     <section className="bg-[#f5f5f7] py-24 px-6 lg:px-10">
       <div className="max-w-7xl mx-auto">
-        
         {/* Header */}
         <div className="flex items-start justify-between mb-14">
           <div>
@@ -94,11 +92,12 @@ export default function CategorySection() {
               Explore our three core pillars of premium shirting.
             </p>
           </div>
-
-          <button className="hidden md:flex items-center gap-2 text-sm font-medium text-[#2563eb] hover:gap-3 transition-all">
-            Explore All
-            <span>→</span>
-          </button>
+          <Link href="/new-arrival">
+            <button className="hidden md:flex items-center gap-2 text-sm font-medium text-[#2563eb] hover:gap-3 transition-all">
+              Explore All
+              <span>→</span>
+            </button>
+          </Link>
         </div>
 
         {/* Cards */}

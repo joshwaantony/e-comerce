@@ -17,10 +17,10 @@ export default function HomePage() {
         {/* Page Header */}
         <div className="mb-14">
           <h1 className="text-5xl font-bold tracking-tight mb-4">
-            New Arrivals
+            New Collections
           </h1>
 
-          <p className="max-w-3xl text-lg text-gray-500 leading-8">
+          <p className="max-w-xl text-lg text-gray-500 leading-8">
             Explore the latest curation of high-fashion pieces
             from emerging designers and established boutiques
             worldwide.

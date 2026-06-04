@@ -8,13 +8,15 @@ import HeroSection from "@/components/home/HeroSection";
 import NewsletterSection from "@/components/home/NewsletterSection";
 import ProductSection from "@/components/home/ProductSection";
 import TestimonialSection from "@/components/home/TestimonialSection";
+import Navbar from "@/components/newArrival/Navbar";
 
 
 
 export default function Home() {
   return (
     <main className="bg-white text-gray-900 overflow-x-hidden">
-      <Header />
+      {/* <Header /> */}
+      <Navbar />
       <HeroSection />
       <CategorySection />
       <ProductSection />

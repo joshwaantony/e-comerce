@@ -1,6 +1,8 @@
 
 // components/HeroSection.jsx
 
+import Link from "next/link";
+
 export default function HeroSection() {
   return (
     <section className="relative h-screen w-full overflow-hidden">
@@ -45,9 +47,11 @@ export default function HeroSection() {
             <div className="mt-12 flex flex-wrap items-center gap-5">
               
               {/* Primary Button */}
+              <Link href="/new-arrival">
               <button className="rounded-full bg-blue-600 px-8 py-4 text-[15px] font-semibold text-white transition-all duration-300 hover:bg-blue-700 hover:scale-[1.03] hover:shadow-2xl">
                 Shop Shirts
               </button>
+              </Link>
 
               {/* Secondary Button */}
               <button className="rounded-full border border-white/60 bg-white/5 px-8 py-4 text-[15px] font-semibold text-white backdrop-blur-md transition-all duration-300 hover:bg-white/10 hover:border-white">
